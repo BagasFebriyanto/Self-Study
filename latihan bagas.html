@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Products Sales Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Water Products Sales Report team 4</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Product ID</th>
+                <th>Product Name</th>
+                <th>Quantity Sold</th>
+                <th>Total Sales (USD)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>101</td>
+                <td>Bottled Water 500ml</td>
+                <td>1500</td>
+                <td>750</td>
+            </tr>
+            <tr>
+                <td>102</td>
+                <td>Mineral Water 1L</td>
+                <td>1200</td>
+                <td>960</td>
+            </tr>
+            <tr>
+                <td>103</td>
+                <td>Sparkling Water 750ml</td>
+                <td>800</td>
+                <td>1200</td>
+            </tr>
+            <tr>
+                <td>104</td>
+                <td>Flavored Water 600ml</td>
+                <td>900</td>
+                <td>1350</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pie Chart with Chart.js</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h2>Pie Chart Example</h2>
+    <canvas id="myPieChart" width="50" height="50"></canvas>
+    <script>
+        // Mendapatkan konteks dari elemen kanvas
+        var ctx = document.getElementById('myPieChart').getContext('2d');
+
+        // Membuat pie chart
+        var myPieChart = new Chart(ctx, {
+            type: 'pie',
+            data: {
+                labels: ['Burnswick Sq Mall', 'EB Public Library', 'Earle Asphalt'],
+                datasets: [{
+                    label: 'Dataset',
+                    data: [53.3, 44, 2.7], // Menambahkan nilai 2.7 agar totalnya 100%
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true
+            }
+        });
+    </script>
+</body>
+</html>
+
