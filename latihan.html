@@ -3,9 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sales Report</title>
+    <link rel="stylesheet" href="Style Latihan.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-    
+
+<div class="container">
+    <div class="title">The Sales Report of product in the water category</div>
+    <div class="sales-data">
+        <div>
+            <h2>2022</h2>
+            <p>Total Sales: $1,221.25</p>
+            <p>Total Transaksi: 657</p>
+        </div>
+    </div>
+    <div class="chart-container">
+        <canvas id="lineChart" class="chart"></canvas>
+        <canvas id="pieChart" class="chart"></canvas>
+    </div>
+</div>
+
+<script src="JavaScript/Grafik.js"></script>
+
 </body>
 </html>
